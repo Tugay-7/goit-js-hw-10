@@ -1,32 +1,57 @@
-:root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #460709, #fad0c4);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body {
+/* Ana içerik kutusu */
+main {
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Menü düzeni */
+.index {
+  font-size: 24px;
   display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
+  gap: 50px;
+  font-weight: 700;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-main {
-  flex-grow: 1;
+/* Liste elemanları (buton görünümlü) */
+.index li {
+  padding: 12px 24px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
 }
-main:has(.back-link) {
-  text-align: center;
+
+.index li:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #000000;
+}
+
+/* Linkler */
+.index a {
+  text-decoration: none;
+  color: #b18686;
+  transition: color 0.3s ease;
+}
+
+.index a:hover {
+  color: #020202ad;
 }

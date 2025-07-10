@@ -5,75 +5,7 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
 
-
-/* Genel arka plan ve yazı */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #460709, #fad0c4);
-  color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Ana içerik kutusu */
-main {
-  padding: 50px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
-}
-
-/* Menü düzeni */
-.index {
-  font-size: 24px;
-  display: flex;
-  gap: 50px;
-  font-weight: 700;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Liste elemanları (buton görünümlü) */
-.index li {
-  padding: 12px 24px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(4px);
-  transition: all 0.3s ease;
-}
-
-.index li:hover {
-  transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.3);
-  border-color: #000000;
-}
-
-/* Linkler */
-.index a {
-  text-decoration: none;
-  color: #b18686;
-  transition: color 0.3s ease;
-}
-
-.index a:hover {
-  color: #020202ad;
-}
